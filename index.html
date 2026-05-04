@@ -199,7 +199,7 @@ tr:nth-child(even) td{background:rgba(155,27,58,.015);}
   <div class="kpis">
     <div class="kpi"><div class="kpi-bar"></div><span class="kpi-emoji">&#128176;</span><div class="kpi-label">Fat. c/ Imp</div><div class="kpi-value red" id="r-com">...</div><div class="kpi-badge" id="r-com-b"></div></div>
     <div class="kpi"><div class="kpi-bar g"></div><span class="kpi-emoji">&#128200;</span><div class="kpi-label">Fat. s/ Imp</div><div class="kpi-value green" id="r-sem">...</div><div class="kpi-badge" id="r-sem-b"></div></div>
-    <div class="kpi"><div class="kpi-bar go"></div><span class="kpi-emoji">&#128203;</span><div class="kpi-label">Orcamentos</div><div class="kpi-value" id="kpi-orc">6</div></div>
+    <div class="kpi"><div class="kpi-bar go"></div><span class="kpi-emoji">&#128203;</span><div class="kpi-label">Orcamentos</div><div class="kpi-value" id="kpi-orc">...</div></div>
     <div class="kpi"><div class="kpi-bar b"></div><span class="kpi-emoji">&#128197;</span><div class="kpi-label">Periodo</div><div class="kpi-value" id="r-per">7 dias</div></div>
   </div>
 
@@ -303,24 +303,24 @@ document.getElementById('pwd').addEventListener('keydown', function(e){ if(e.key
 // DADOS 
 var D = {
   7:{
-    fatCom:parseFloat("32643,79")||0,
+    fatCom:parseFloat("33041,92")||0,
     orc:parseFloat("6")||0,
-    fatSem:parseFloat("28449,2")||0,
+    fatSem:parseFloat("28795,4")||0,
     cliValN:["VOLGA ENGENHARIA INDUSTRIA E COMERCIO LTDA","LUMINA SOLUCOES INDUSTRIAIS LTDA","IOSI PROJETOS S/S LTDA","WEG EQUIPAMENTOS ELETRICOS S/A","AUTI AUTOMACAO INDUSTRIAL LTDA","ROTOPLAST INDUSTRIA DE CLIMATIZADORES LTDA","METTA EQUIPAMENTOS ELETRICOS LTDA","TEKSEA SISTEMAS DE ENERGIA LTDA","TECHRUBBER INDUSTRIA E COMERCIO DE VALVULAS LTDA","ENGETEAM SISTEMAS INDUSTRIAIS E AUTOMACAO LTDA"],
     cliValV:[parseFloat("9758.71")||0,parseFloat("8669.85")||0,parseFloat("2485.15")||0,parseFloat("1598.28")||0,parseFloat("1128.24")||0,parseFloat("1097.16")||0,parseFloat("1036.74")||0,parseFloat("780.4")||0,parseFloat("737.55")||0,parseFloat("605.76")||0],
-    cliQtdN:["VOLGA ENGENHARIA INDUSTRIA E COMERCIO LTDA","IOSI PROJETOS S/S LTDA","LUMINA SOLUCOES INDUSTRIAIS LTDA","TEKSEA SISTEMAS DE ENERGIA LTDA","AUTI AUTOMACAO INDUSTRIAL LTDA","METTA EQUIPAMENTOS ELETRICOS LTDA","WEG EQUIPAMENTOS ELETRICOS S/A","ENGETEAM SISTEMAS INDUSTRIAIS E AUTOMACAO LTDA","MULTI PACK PLAS INDUSTRIA E COMERCIO DE MAQUINAS LTDA","ROTOPLAST INDUSTRIA DE CLIMATIZADORES LTDA"],
-    cliQtdV:[parseFloat("100")||0,parseFloat("24")||0,parseFloat("21")||0,parseFloat("10")||0,parseFloat("8")||0,parseFloat("6")||0,parseFloat("6")||0,parseFloat("3")||0,parseFloat("3")||0,parseFloat("2")||0],
-    prodN:["LUMIN. D29 100-240VAC LED LINEAR 6W 6500K BORNE FIXO LIGA-DESL","LUMIN. D29 100-240VAC LED LINEAR 9W 6500K BORNE FIXO LIGA-DESL","LUMIN. BLINDADA D80 100-240VAC LED LINEAR 9W 6500K M12 POLIC.","LUMIN. D29 24VCC LED LINEAR 4W 6500K BORNE FIXO LIGA-DESL","LUMIN. RIO 100-240VAC LED LINEAR 6W 6500K BORNE FIXO FIM DE CURSO","LUMIN. RIO 100-240VAC LED LINEAR 09W 6500K BORNE MOLA TOMADA","CABO M12 FEMEA 5M","LUMIN. BLINDADA 100-240VAC LED LINEAR 12W 6500K M12 POLIC.","LUMIN. RIO 100-240VAC LED LINEAR 09W 6500K BORNE MOLA FIM DE CURSO","LUMIN. RIO 24VCC LED LINEAR 4W 6500K BORNE FIXO LIGA-DESL+FIM DE CURSO"],
-    prodV:[parseFloat("101")||0,parseFloat("24")||0,parseFloat("21")||0,parseFloat("10")||0,parseFloat("8")||0,parseFloat("4")||0,parseFloat("3")||0,parseFloat("3")||0,parseFloat("3")||0,parseFloat("3")||0],
+    cliQtdN:["VOLGA ENGENHARIA INDUSTRIA E COMERCIO LTDA","IOSI PROJETOS S/S LTDA","LUMINA SOLUCOES INDUSTRIAIS LTDA","TEKSEA SISTEMAS DE ENERGIA LTDA","AUTI AUTOMACAO INDUSTRIAL LTDA","METTA EQUIPAMENTOS ELETRICOS LTDA","WEG EQUIPAMENTOS ELETRICOS S/A","S H W INSTRUMENTACAO INDUSTRIAL E COMERCIAL LTDA","ENGETEAM SISTEMAS INDUSTRIAIS E AUTOMACAO LTDA","MULTI PACK PLAS INDUSTRIA E COMERCIO DE MAQUINAS LTDA"],
+    cliQtdV:[parseFloat("100")||0,parseFloat("24")||0,parseFloat("21")||0,parseFloat("10")||0,parseFloat("8")||0,parseFloat("6")||0,parseFloat("6")||0,parseFloat("4")||0,parseFloat("3")||0,parseFloat("3")||0],
+    prodN:["LUMIN. D29 100-240VAC LED LINEAR 6W 6500K BORNE FIXO LIGA-DESL","LUMIN. D29 100-240VAC LED LINEAR 9W 6500K BORNE FIXO LIGA-DESL","LUMIN. BLINDADA D80 100-240VAC LED LINEAR 9W 6500K M12 POLIC.","LUMIN. D29 24VCC LED LINEAR 4W 6500K BORNE FIXO LIGA-DESL","LUMIN. RIO 100-240VAC LED LINEAR 6W 6500K BORNE FIXO FIM DE CURSO","LUMIN. RIO 100-240VAC LED LINEAR 09W 6500K BORNE MOLA TOMADA","LUMIN. T29 100-240VAC LED LINEAR 9W 6500K BORNE MOLA LIGA-DESL","CABO M12 FEMEA 5M","LUMIN. BLINDADA 100-240VAC LED LINEAR 12W 6500K M12 POLIC.","LUMIN. RIO 100-240VAC LED LINEAR 09W 6500K BORNE MOLA FIM DE CURSO"],
+    prodV:[parseFloat("101")||0,parseFloat("24")||0,parseFloat("21")||0,parseFloat("10")||0,parseFloat("8")||0,parseFloat("4")||0,parseFloat("4")||0,parseFloat("3")||0,parseFloat("3")||0,parseFloat("3")||0],
     grpValN:["N29","BLINDADA","RIO","ACABADO","COMPACTA"],
-    grpValV:[parseFloat("13101.18")||0,parseFloat("11617.56")||0,parseFloat("3007.04")||0,parseFloat("485.28")||0,parseFloat("238.14")||0],
+    grpValV:[parseFloat("13447.38")||0,parseFloat("11617.56")||0,parseFloat("3007.04")||0,parseFloat("485.28")||0,parseFloat("238.14")||0],
     grpQtdN:["N29","BLINDADA","RIO","ACABADO","COMPACTA"],
-    grpQtdV:[parseFloat("135")||0,parseFloat("27")||0,parseFloat("18")||0,parseFloat("3")||0,parseFloat("2")||0]
+    grpQtdV:[parseFloat("139")||0,parseFloat("27")||0,parseFloat("18")||0,parseFloat("3")||0,parseFloat("2")||0]
   },
   15:{
-    fatCom:parseFloat("93028,38")||0,
+    fatCom:parseFloat("93426,51")||0,
     orc:parseFloat("16")||0,
-    fatSem:parseFloat("80012,5")||0,
+    fatSem:parseFloat("80358,7")||0,
     cliValN:["LUMINA SOLUCOES INDUSTRIAIS LTDA","CASH COMPONENTES INDUSTRIAIS LTDA","VOLGA ENGENHARIA INDUSTRIA E COMERCIO LTDA","THYSSENKRUPP METALURGICA CAMPO LIMPO LTDA","WAGO ELETROELETRONICOS LTDA.","GEVAS BRASIL - LTDA","DIVIMEC TECNOLOGIA INDUSTRIAL LTDA","MULTI PACK PLAS INDUSTRIA E COMERCIO DE MAQUINAS LTDA","WEG EQUIPAMENTOS ELETRICOS S/A","SELGRON INDUSTRIAL LTDA"],
     cliValV:[parseFloat("12882.65")||0,parseFloat("11200.0")||0,parseFloat("9758.71")||0,parseFloat("5627.07")||0,parseFloat("4800.0")||0,parseFloat("3427.96")||0,parseFloat("2771.44")||0,parseFloat("2749.9")||0,parseFloat("2663.8")||0,parseFloat("2545.5")||0],
     cliQtdN:["WAGO ELETROELETRONICOS LTDA.","VOLGA ENGENHARIA INDUSTRIA E COMERCIO LTDA","DIVIMEC TECNOLOGIA INDUSTRIAL LTDA","LUMINA SOLUCOES INDUSTRIAIS LTDA","SELGRON INDUSTRIAL LTDA","IOSI PROJETOS S/S LTDA","CASH COMPONENTES INDUSTRIAIS LTDA","NEST INOVACAO EM ENERGIA LTDA","GEVAS BRASIL - LTDA","ELEPIRA ENGENHARIA, COMERCIO E SERVICOS LTDA"],
@@ -328,9 +328,9 @@ var D = {
     prodN:["TOM. AUX. PLASTICA 10A FIXAÇÃO TRILHO DIN BORNE MOLA (WAGO)","LUMIN. D29 100-240VAC LED LINEAR 6W 6500K BORNE FIXO LIGA-DESL","LUMIN. BLINDADA D80 100-240VAC LED LINEAR 9W 6500K M12 POLIC.","LUMIN. D29 100-240VAC LED LINEAR 9W 6500K BORNE FIXO LIGA-DESL","LUMIN. TUBULAR COMPACTA 100-240VAC LED LINEAR 6W 6500K BORNE MOLA LIGA/DESLIGA","LUMIN. BLINDADA N65 100-240VAC LED LINEAR 2X18W 6500K PG11 CABO 2M POLIC. L1-650","KIT DE FIXACAO C/IMA LUMINARIA N29/D29","LUMIN. D29 24VCC LED LINEAR 11W 6500K BORNE FIXO LIGA-DESL","LUMIN. D29 24VCC LED LINEAR 4W 6500K BORNE FIXO LIGA-DESL","LUMIN. RIO 100-240VCA T8 LED 18W 6500K BORNE FIXO LIGA-DESL"],
     prodV:[parseFloat("200")||0,parseFloat("131")||0,parseFloat("31")||0,parseFloat("24")||0,parseFloat("21")||0,parseFloat("20")||0,parseFloat("12")||0,parseFloat("10")||0,parseFloat("10")||0,parseFloat("10")||0],
     grpValN:["BLINDADA","N29","RIO","CALHA DE TOMADA","COMPACTA"],
-    grpValV:[parseFloat("39527.23")||0,parseFloat("18621.87")||0,parseFloat("9570.3")||0,parseFloat("4993.52")||0,parseFloat("4144.5")||0],
+    grpValV:[parseFloat("39527.23")||0,parseFloat("18968.07")||0,parseFloat("9570.3")||0,parseFloat("4993.52")||0,parseFloat("4144.5")||0],
     grpQtdN:["CALHA DE TOMADA","N29","BLINDADA","RIO","COMPACTA"],
-    grpQtdV:[parseFloat("204")||0,parseFloat("198")||0,parseFloat("75")||0,parseFloat("49")||0,parseFloat("31")||0]
+    grpQtdV:[parseFloat("204")||0,parseFloat("202")||0,parseFloat("75")||0,parseFloat("49")||0,parseFloat("31")||0]
   },
   30:{
     fatCom:parseFloat("160383,92")||0,
